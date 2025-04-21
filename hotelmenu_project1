@@ -1,0 +1,29 @@
+menu ={
+    'pizza':430,
+    'pasta':430,
+    'burger':430,
+    'salad':430,
+    'coffee':43,
+}
+
+print("Welcome to our resturant, here's the menu:")
+print("pizza:Rs430\n pasta:Rs430\n burger:Rs430\n salad:Rs430\n coffee:Rs430")
+
+order_total=0
+
+item_1 = input("Enter the name of item you wamt to order = ")
+if item_1 in menu:
+      order_total += menu[item_1]
+      print("your item",item_1,"have been added to your order")
+else:
+    print("order item",item_1,"is not avaialable yet!")
+
+another_order = input("Don you want to add another item? (yes/no)")
+if another_order == "yes" :
+   item_2 = input("Enter the name of  second item = ")
+   if item_2 in menu :
+       order_total += menu[item_2]
+       print("item",item_2,"has been added to order")
+   else:
+       print("orderd item",item_2,"is not avaialable!")
+print("The total amount of item to pay is",order_total)
