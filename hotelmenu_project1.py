@@ -7,7 +7,7 @@ menu ={
 }
 
 print("Welcome to our resturant, here's the menu:")
-print("pizza:Rs430\n pasta:Rs430\n burger:Rs430\n salad:Rs430\n coffee:Rs430")
+print("pizza:Rs499\n pasta:Rs50\n burger:Rs199\n salad:Rs40\n coffee:Rs80")
 
 order_total=0
 
